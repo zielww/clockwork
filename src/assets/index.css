@@ -1,13 +1,10 @@
-@import "tailwindcss";
-
 /* Bebas Neue */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import "tailwindcss";
 
 /* Variables */
 :root {
   --main: #000000;
-  --holder: #101010;
 }
 
 html, body, #app {
@@ -16,12 +13,12 @@ html, body, #app {
   padding: 0;
   height: 100%;
   width: 100%;
-  color: white;
 }
 
 @theme {
   /*Colors*/
   --color-holder: #101010;
+  --color-primary: #b7b7b7;
 
   /*Fonts*/
   --font-main: 'Bebas Neue', 'sans-serif';

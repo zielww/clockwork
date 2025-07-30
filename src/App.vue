@@ -2,6 +2,8 @@
 </script>
 
 <template>
-  <RouterView />
+  <div class="h-full w-svw">
+    <RouterView />
+  </div>
 </template>
 
