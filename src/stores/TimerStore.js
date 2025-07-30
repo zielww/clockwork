@@ -6,7 +6,6 @@ export let useTimerStore = defineStore('timer', {
     timeLeft: 120_000,
     intervalId: null,
     timeRunning: false,
-    startedAt: 0,
   }),
 
   getters: {
@@ -27,14 +26,12 @@ export let useTimerStore = defineStore('timer', {
     startTimer() {
       if (this.timeRunning) return;
 
-      this.startedAt = Date.now();
-      this.timeRunning = true;
-
       this.intervalId = setInterval(() => {
-        const elapsed = Date.now() - this.startedAt;
-        this.timeLeft = Math.max(0, this.startingTime - elapsed);
+        this.timeLeft = Math.max(0, this.timeLeft - 50);
         if (this.timeLeft === 0) this.stopTimer();
-      }, 250);
+      }, 50);
+
+      this.timeRunning = true;
     },
 
     stopTimer() {
