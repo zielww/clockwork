@@ -10,38 +10,49 @@ export let useTimerStore = defineStore('timer', {
 
   getters: {
     totalSeconds() {
-      return Math.floor(this.timeLeft / 1000);
+      return Math.floor(this.timeLeft / 1000)
     },
 
     minutes() {
-      return String(Math.floor(this.totalSeconds / 60)).padStart(2, '0');
+      return String(Math.floor(this.totalSeconds / 60)).padStart(2, '0')
     },
 
     seconds() {
-      return String(this.totalSeconds % 60).padStart(2, '0');
+      return String(this.totalSeconds % 60).padStart(2, '0')
     },
   },
 
   actions: {
+    init() {
+      let lastStartingTime = this.startingTime
+
+      this.$subscribe((mutation, state) => {
+        if (state.startingTime !== lastStartingTime) {
+          state.timeLeft = state.startingTime
+          lastStartingTime = state.startingTime
+        }
+      })
+    },
+
     startTimer() {
-      if (this.timeRunning) return;
+      if (this.timeRunning) return
 
       this.intervalId = setInterval(() => {
-        this.timeLeft = Math.max(0, this.timeLeft - 50);
-        if (this.timeLeft === 0) this.stopTimer();
-      }, 50);
+        this.timeLeft = Math.max(0, this.timeLeft - 50)
+        if (this.timeLeft === 0) this.stopTimer()
+      }, 50)
 
-      this.timeRunning = true;
+      this.timeRunning = true
     },
 
     stopTimer() {
-      clearInterval(this.intervalId);
-      this.timeRunning = false;
+      clearInterval(this.intervalId)
+      this.timeRunning = false
     },
 
     resetTimer() {
-      this.stopTimer();
-      this.timeLeft = this.startingTime;
+      this.stopTimer()
+      this.timeLeft = this.startingTime
     },
   },
 })

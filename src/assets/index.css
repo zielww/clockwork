@@ -5,6 +5,7 @@
 /* Variables */
 :root {
   --main: #000000;
+  --slider: #353535;
 }
 
 html, body, #app {
@@ -19,6 +20,7 @@ html, body, #app {
   /*Colors*/
   --color-holder: #101010;
   --color-primary: #b7b7b7;
+  --color-slider: #353535;
 
   /*Fonts*/
   --font-main: 'Bebas Neue', 'sans-serif';
