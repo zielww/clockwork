@@ -10,7 +10,7 @@
   <p align="center">
     Aesthetic and Minimalistic Looking Timer for Daily Timer Needs!
     <br />
-    <a href="https://github.com/zielww/clockwork">View Demo</a>
+    <a href="https://clockwork-self.vercel.app/">View Demo</a>
     &middot;
     <a href="https://github.com/zielww/clockwork/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
