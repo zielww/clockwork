@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/zielww/clockwork">
     <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -10,13 +10,15 @@
   <p align="center">
     Aesthetic and Minimalistic Looking Timer for Daily Timer Needs!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/zielww/clockwork">View Demo</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/zielww/clockwork/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     &middot;
-    <a href="https://github.com/othneildrew/Best-README-Template/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/zielww/clockwork/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
-<h3 align=center>Project under development</h3>
+## About The Project
+
+This Clockwork timer is a minimalistic and aesthetic timer for web. It is basically just a fun practice project that I may or may not use in everyday stuff. I just built it because its exciting and it'lll probably be usefull for me in the future.
  
