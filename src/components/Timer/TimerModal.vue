@@ -2,8 +2,7 @@
 import { ref } from 'vue'
 import TimerModalContent from '@/components/Timer/TimerModalContent.vue'
 
-let showModal = ref(true);
-
+let showModal = ref(false);
 </script>
 
 <template>

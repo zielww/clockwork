@@ -5,10 +5,10 @@
     <img src="public/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">Clockwork - Flip Clock</h3>
+<h3 align="center">Clockwork - Timer</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Aesthetic and Minimalistic Looking Timer for Daily Timer Needs!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
     &middot;

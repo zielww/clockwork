@@ -6,6 +6,7 @@ export let useTimerStore = defineStore('timer', {
     timeLeft: 120_000,
     intervalId: null,
     timeRunning: false,
+    timerScale: 100,
   }),
 
   getters: {
