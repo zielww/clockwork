@@ -3,6 +3,8 @@ import { ref } from 'vue'
 import TimerModalContent from '@/components/Timer/TimerModalContent.vue'
 
 let showModal = ref(false);
+
+defineExpose({showModal});
 </script>
 
 <template>

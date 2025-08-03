@@ -14,6 +14,8 @@ const toggleClass = computed(() => {
 const scaleWrapper = computed(() => {
   return `scale: ${timer.timerScale}%`;
 })
+
+
 </script>
 
 <template>
